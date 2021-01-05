@@ -1,0 +1,13 @@
+{
+    "name": "teambravo/superadmin_pkg",
+    "description": "It Helps to track all the information of a company! developed by Mohammad Ruhul Amin",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "TeamBravo\\SuperAdmin\\\\":"src/"
+        }
+    }
+}
