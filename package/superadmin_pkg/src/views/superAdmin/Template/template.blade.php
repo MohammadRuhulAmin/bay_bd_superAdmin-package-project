@@ -43,7 +43,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <a class="active-menu"  href="#"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a  href="#"><i class="fa fa-desktop fa-3x"></i> Employee List</a>
+                    <a  href="#"><i class="fa fa-desktop fa-3x"></i>Users</a>
                 </li>
                 <li>
                     <a  href="#"><i class="fa fa-qrcode fa-3x"></i> Create Employee</a>

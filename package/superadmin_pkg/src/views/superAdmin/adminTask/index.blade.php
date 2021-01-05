@@ -3,6 +3,6 @@
 
 @section('content')
     <div class="jumbotron">
-        <h1>Dash Board </h1>
+        <h3>Dash Board</h3>
     </div>
 @endsection
