@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 
 class SuperAdminController extends Controller{
 
-
     public function index(){
-        return view('SuperAdmin::test');
+        return view('SuperAdmin::superAdmin.adminTask.index');
     }
+
 
 }
