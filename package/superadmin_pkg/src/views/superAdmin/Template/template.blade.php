@@ -40,10 +40,10 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <img src="{{asset('superadmin_pkg/img/find_user.png')}}" class="user-image img-responsive"/>
                 </li>
                 <li>
-                    <a class="active-menu"  href="#"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                    <a class="active-menu"  href="{{route('dashboard')}}"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a  href="#"><i class="fa fa-desktop fa-3x"></i>Users</a>
+                    <a  href="{{route('user.create')}}"><i class="fa fa-desktop fa-3x"></i>Users</a>
                 </li>
                 <li>
                     <a  href="#"><i class="fa fa-qrcode fa-3x"></i> Create Employee</a>
