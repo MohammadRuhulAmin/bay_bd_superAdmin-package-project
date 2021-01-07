@@ -52,11 +52,12 @@ class SuperAdminController extends Controller{
         $user->save();
         echo "User is saved!";
 
+    }
 
-
-
-
-
+    public function userList(){
+        $usersList = User::all();
+        return view('SuperAdmin::superAdmin.adminTask.CreateUser.usersList',compact('usersList'));
+        
 
     }
 

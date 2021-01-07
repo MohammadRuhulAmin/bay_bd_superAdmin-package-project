@@ -55,7 +55,6 @@
             <div class="form-group">
                 <button class="btn btn-success pull-right" type="submit">Save</button>
             </div>
-            
         </form>
     </div>
 @endsection
