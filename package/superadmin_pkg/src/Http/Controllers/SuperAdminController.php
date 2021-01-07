@@ -113,7 +113,13 @@ class SuperAdminController extends Controller{
         $user->save();
         echo "User is updated & saved!";
 
-    }   
+    }  
+    
+    public function deleteUser($id){
+        $userInfo = User::find($id);
+        $userInfo->delete();
+        return redirect()->route('user.userList');
+    }
 
 
 }
