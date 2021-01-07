@@ -23,9 +23,9 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->longText('address');
             $table->integer('salary');
-            $table->string('photo');
-            $table->string('cv');
-            $table->string('appoinment_letter');
+            $table->string('photo')->nullable();
+            $table->string('cv')->nullable();
+            $table->string('appoinment_letter')->nullable();
             $table->string('user_type');
             $table->rememberToken();
             $table->timestamps();

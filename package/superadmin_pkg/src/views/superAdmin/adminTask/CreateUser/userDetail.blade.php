@@ -5,13 +5,14 @@
 
     <div class="jumbotron">
         <img src="{{url($userDetail->photo)}}" width="200" height="200">
+        <br>
+
+        <a href="{{route('user.editInfo',$userDetail->id)}}" class="btn btn-warning pull-right">Edit Details</a>
+        <a href="" class="btn btn-danger pull-right">Delet User Permanently</a>
     </div>
 
-       
              <!--   Basic Table  -->
             
-                
-               
                     <div class="table-responsive">
                         <table class="table">
                            <tr>
@@ -49,11 +50,4 @@
             </div>
     
             
-  
-      
-        
-
-
-
-
 @endsection
