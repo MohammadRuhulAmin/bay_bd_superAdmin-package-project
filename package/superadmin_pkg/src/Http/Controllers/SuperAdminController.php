@@ -69,7 +69,7 @@ class SuperAdminController extends Controller{
         return view('SuperAdmin::superAdmin.adminTask.CreateUser.userEditInfo',compact('userInfo'));
     }
 
-    public function saveUser(Request $request,$id){
+    public function saveUserUpdate(Request $request,$id){
         $user = User::find($id);
         $user->name = $request->name;
         $user->email = $request->email;
@@ -81,26 +81,32 @@ class SuperAdminController extends Controller{
 
         // saving photo of user 
          
-
-        $file_photo = $request->photo;
-        $extention_photo = $file_photo->getClientOriginalExtension();
-        $filename_photo ='images/' . time() . '.' . $extention_photo;
-        $file_photo->move('images/',$filename_photo);
-        $user->photo = $filename_photo;
+        if(!empty($request->photo)){
+            $file_photo = $request->photo;
+            $extention_photo = $file_photo->getClientOriginalExtension();
+            $filename_photo ='images/' . time() . '.' . $extention_photo;
+            $file_photo->move('images/',$filename_photo);
+            $user->photo = $filename_photo;
+        }
+        
 
         // saving cv 
-        $file_cv = $request->cv;
-        $extention_cv = $file_cv->getClientOriginalExtension();
-        $filename_cv ='cvs/' . time() . '.' . $extention_cv;
-        $file_cv->move('cvs/',$filename_cv);
-        $user->cv = $filename_cv;
+        if(!empty($request->cv)){
+            $file_cv = $request->cv;
+            $extention_cv = $file_cv->getClientOriginalExtension();
+            $filename_cv ='cvs/' . time() . '.' . $extention_cv;
+            $file_cv->move('cvs/',$filename_cv);
+            $user->cv = $filename_cv;
+        }
         // saving appoinment letter
        
-        $file_apl = $request->appoinment_letter;
-        $extention_apl = $file_apl->getClientOriginalExtension();
-        $filename_apl ='appoinment_letters/' . time() . '.' . $extention_apl;
-        $file_apl->move('appoinment_letters/',$filename_apl);
-        $user->appoinment_letter = $filename_apl;
+        if(!empty($request->appoinment_letter)){
+            $file_apl = $request->appoinment_letter;
+            $extention_apl = $file_apl->getClientOriginalExtension();
+            $filename_apl ='appoinment_letters/' . time() . '.' . $extention_apl;
+            $file_apl->move('appoinment_letters/',$filename_apl);
+            $user->appoinment_letter = $filename_apl;
+        }
         
         
         $user->password = $request->password;
