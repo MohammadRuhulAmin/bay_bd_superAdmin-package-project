@@ -41,10 +41,11 @@ class SuperAdminController extends Controller{
         $file_cv->move('cvs/',$filename_cv);
         $user->cv = $filename_cv;
         // saving appoinment letter
+       
         $file_apl = $request->appoinment_letter;
         $extention_apl = $file_apl->getClientOriginalExtension();
-        $filename_apl ='appoinment_letter/' . time() . '.' . $extention_apl;
-        $file_apl->move('cvs/',$filename_apl);
+        $filename_apl ='appoinment_letters/' . time() . '.' . $extention_apl;
+        $file_apl->move('appoinment_letters/',$filename_apl);
         $user->appoinment_letter = $filename_apl;
         
         
@@ -57,8 +58,10 @@ class SuperAdminController extends Controller{
     public function userList(){
         $usersList = User::all();
         return view('SuperAdmin::superAdmin.adminTask.CreateUser.usersList',compact('usersList'));
-        
-
+    }
+    public function userDetail($id){
+        $userDetail = User::find($id);
+        return view('SuperAdmin::superAdmin.adminTask.CreateUser.userDetail',compact('userDetail'));
     }
 
 

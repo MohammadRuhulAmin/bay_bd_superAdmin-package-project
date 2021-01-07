@@ -33,7 +33,7 @@
                                 <td class="center">{{$userList->email}}</td>
                                 <td>{{$userList->phone}}</td>
                                 <td class="center">{{$userList->user_type}}</td>
-                                <td> <a href="" class="btn btn-success">Details</a> </td>
+                                <td> <a href="{{route('user.details',$userList->id)}}" class="btn btn-success">Details</a> </td>
                             </tr>
                             @endforeach
                         

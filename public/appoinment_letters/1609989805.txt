@@ -1,0 +1,45 @@
+1.Super Admin
+   
+       1)expenses
+            -Sector
+            -amount
+            -date
+            -month
+       2)users
+             -id
+             -weight
+             -name
+             -email
+             -phone
+             -address
+             -salary
+             -photo
+             -cv
+             -appointment_letter
+             -type
+             -password
+        3)projects
+              -id
+              -name
+              -starting_date
+              -ending_date
+              -current_status
+              -budget
+              -documents
+
+        4)projectmembers
+              -employee_id
+              -project_id
+
+       
+        5)tasks
+              -retrive
+        6)documents
+              -name
+              -filename
+        7)attendences
+              -user_id
+              -date
+              -status
+        8)password reset module
+
