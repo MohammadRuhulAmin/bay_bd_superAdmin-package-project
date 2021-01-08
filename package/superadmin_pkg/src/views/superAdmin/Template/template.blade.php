@@ -49,7 +49,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <a  href="{{route('user.userList')}}"><i class="fa fa-qrcode fa-3x"></i>User List & Operations </a>
                 </li>
                 <li  >
-                    <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i> Morris Charts</a>
+                    <a   href="{{route('user.attendenceView')}}"><i class="fa fa-bar-chart-o fa-3x"></i>Attendence</a>
                 </li>
                 <li  >
                     <a  href="table.html"><i class="fa fa-table fa-3x"></i> Table Examples</a>

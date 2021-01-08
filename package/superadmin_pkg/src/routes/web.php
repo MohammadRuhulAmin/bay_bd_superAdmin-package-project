@@ -13,5 +13,13 @@ Route::group(['namespace'=>'TeamBravo\SuperAdmin\Http\Controllers'],function(){
     Route::get('/super_admin/user_list/user_details/edit/{id}','SuperAdminController@userEdit')->name('user.editInfo');
     Route::post('/super_admin/user_list/user_details/update/{id}','SuperAdminController@saveUserUpdate')->name('user.update');
     Route::get('/super_admin/user_list/user_details/delete/{id}','SuperAdminController@deleteUser')->name('user.delete');
+
+
+    //attendence module
+
+    Route::get('/super_admin/Attendence','AttendenceController@viewAttendenceFile')->name('user.attendenceView');
+    Route::post('/super_admin/Attendence/store','AttendenceController@storeAttendence')->name('attendence.store');
+    Route::post('/super_admin/Attendence/AttendenceList/','AttendenceController@searchUserAtndnce')->name('user.attendenceList');
+    
 });
 
