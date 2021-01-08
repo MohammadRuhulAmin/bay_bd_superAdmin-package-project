@@ -2,11 +2,17 @@
 namespace TeamBravo\SuperAdmin\Http\Controllers;
 use Illuminate\Http\Request;
 use TeamBravo\SuperAdmin\Models\User;
+
+
 use App\Http\Controllers\Controller;
-use Facade\Ignition\Solutions\UseDefaultValetDbCredentialsSolution;
+
 use Illuminate\Support\Facades\Hash;
+
 use Illuminate\Http\UploadedFile;
 
+
+
+use Illuminate\Support\Facades\Validator;
 use TeamBravo\SuperAdmin\Http\Requests\UserValidator;
 
 
@@ -17,12 +23,12 @@ class SuperAdminController extends Controller{
     public function index(){
         return view('SuperAdmin::superAdmin.adminTask.index');
     }
-    
+
     public function createUser(){
         return view('SuperAdmin::superAdmin.adminTask.CreateUser.createUser');
     }
     public function userStore(UserValidator $request){
-        
+
         $user  = new User();
         $user->name = $request->name;
         $user->email = $request->email;
@@ -32,20 +38,20 @@ class SuperAdminController extends Controller{
         $user->salary = $request->salary;
         $user->user_type = $request->user_type;
 
-        // saving photo of user 
-         
+        // saving photo of user
+
 
         if(!empty($request->photo)){
-            
+
             $file_photo = $request->photo;
             $extention_photo = $file_photo->getClientOriginalExtension();
             $filename_photo ='images/' . time() . '.' . $extention_photo;
             $file_photo->move('images/',$filename_photo);
             $user->photo = $filename_photo;
         }
-        
 
-        // saving cv 
+
+        // saving cv
         if(!empty($request->cv)){
             $file_cv = $request->cv;
             $extention_cv = $file_cv->getClientOriginalExtension();
@@ -54,7 +60,7 @@ class SuperAdminController extends Controller{
             $user->cv = $filename_cv;
         }
         // saving appoinment letter
-       
+
         if(!empty($request->appoinment_letter)){
             $file_apl = $request->appoinment_letter;
             $extention_apl = $file_apl->getClientOriginalExtension();
@@ -62,12 +68,16 @@ class SuperAdminController extends Controller{
             $file_apl->move('appoinment_letters/',$filename_apl);
             $user->appoinment_letter = $filename_apl;
         }
-        
-        
-        
+
+
+
         $user->password = $request->password;
         $user->save();
-        echo "User is saved!";
+
+
+        echo "User is Saved Successfully!";
+
+
 
     }
 
@@ -96,20 +106,20 @@ class SuperAdminController extends Controller{
         $user->salary = $request->salary;
         $user->user_type = $request->user_type;
 
-        // saving photo of user 
-         
+        // saving photo of user
+
 
         if(!empty($request->photo)){
-            
+
             $file_photo = $request->photo;
             $extention_photo = $file_photo->getClientOriginalExtension();
             $filename_photo ='images/' . time() . '.' . $extention_photo;
             $file_photo->move('images/',$filename_photo);
             $user->photo = $filename_photo;
         }
-        
 
-        // saving cv 
+
+        // saving cv
         if(!empty($request->cv)){
             $file_cv = $request->cv;
             $extention_cv = $file_cv->getClientOriginalExtension();
@@ -118,7 +128,7 @@ class SuperAdminController extends Controller{
             $user->cv = $filename_cv;
         }
         // saving appoinment letter
-       
+
         if(!empty($request->appoinment_letter)){
             $file_apl = $request->appoinment_letter;
             $extention_apl = $file_apl->getClientOriginalExtension();
@@ -126,16 +136,16 @@ class SuperAdminController extends Controller{
             $file_apl->move('appoinment_letters/',$filename_apl);
             $user->appoinment_letter = $filename_apl;
         }
-        
-        
-        
+
+
+
         $user->password = $request->password;
         $user->save();
         echo "User is updated!";
-   
 
-    }  
-    
+
+    }
+
     public function deleteUser($id){
         $userInfo = User::find($id);
         $userInfo->delete();

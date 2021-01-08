@@ -2,6 +2,7 @@
 
 namespace TeamBravo\SuperAdmin\Http\Requests;
 
+Use Illuminate\Http\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
 
@@ -41,22 +42,21 @@ class UserValidator extends FormRequest
     }
     public function messages(){
         return[
-            'name.required'=>'User Name is Required',
-          
-            'email.required'=>'Email Has To be Valid! & cannot be null!',
-            'phone.required'=>'phone has to be 11 digits',
-            'address.required'=>'Address has to be correct!',
-            'password.required'=>'User Password cannot be null',
-            'weight.required'=>'Insert a weight',
-            'salary.required'=>'input a valid salary',
-            'cv.required'=>'include cv',
-            'appoinment_letter.required'=>'include appoinment letter',
-            'photo.required'=>'include photo',
-            'user_type.required'=>'Add a Role for the Company!',
+            //'name.required'=>'SuperAdmin::validation.required',
+            // 'name.required'=>'User Name is Required',
+            // 'email.required'=>'Email Has To be Valid! & cannot be null!',
+            // 'phone.required'=>'phone has to be 11 digits',
+            // 'address.required'=>'Address has to be correct!',
+            // 'password.required'=>'User Password cannot be null',
+            // 'weight.required'=>'Insert a weight',
+            // 'salary.required'=>'input a valid salary',
+            // 'cv.required'=>'include cv',
+            // 'appoinment_letter.required'=>'include appoinment letter',
+            // 'photo.required'=>'include photo',
+            // 'user_type.required'=>'Add a Role for the Company!',
         ];
-        
-        
+
+
     }
 
 }
-   
