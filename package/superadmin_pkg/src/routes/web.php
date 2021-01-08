@@ -21,5 +21,12 @@ Route::group(['namespace'=>'TeamBravo\SuperAdmin\Http\Controllers'],function(){
     Route::post('/super_admin/Attendence/store','AttendenceController@storeAttendence')->name('attendence.store');
     Route::post('/super_admin/Attendence/AttendenceList/','AttendenceController@searchUserAtndnce')->name('user.attendenceList');
     
+
+    //document module
+
+    Route::get('/super_admin/Document','DocumentController@index')->name('info.document');
+    Route::post('/super_admin/Document/store','DocumentController@storeDocument')->name('document.save');
+    Route::get('/super_admin/Document/delete/{id}','DocumentController@deleteDocument')->name('document.delete');
+    Route::get('/super_admin/Document/viewDocument/{id}','DocumentController@viewFile')->name('document.view');
 });
 
