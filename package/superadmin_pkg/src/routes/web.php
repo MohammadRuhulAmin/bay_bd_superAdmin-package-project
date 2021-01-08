@@ -28,5 +28,10 @@ Route::group(['namespace'=>'TeamBravo\SuperAdmin\Http\Controllers'],function(){
     Route::post('/super_admin/Document/store','DocumentController@storeDocument')->name('document.save');
     Route::get('/super_admin/Document/delete/{id}','DocumentController@deleteDocument')->name('document.delete');
     Route::get('/super_admin/Document/viewDocument/{id}','DocumentController@viewFile')->name('document.view');
+
+
+    //Expence Module
+    Route::get('/super_admin/Expence','ExpenceController@expenceIndex')->name('expence.index');
+    Route::post('/super_admin/Expence/Store','ExpenceController@storeExpence')->name('expence.store');
 });
 

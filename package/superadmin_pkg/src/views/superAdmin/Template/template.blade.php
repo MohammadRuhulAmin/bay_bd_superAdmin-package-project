@@ -55,7 +55,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <a  href="{{route('info.document')}}"><i class="fa fa-table fa-3x"></i> Documents</a>
                 </li>
                 <li >
-                    <a  href="form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
+                    <a  href="{{route('expence.index')}}"><i class="fa fa-edit fa-3x"></i> Expences </a>
                 </li>
 
                 <li>
