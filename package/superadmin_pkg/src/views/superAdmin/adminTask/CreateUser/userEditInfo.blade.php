@@ -6,11 +6,15 @@
         <h3>Edit User</h3>
     </div>
     <div>
+      
         <form role="form" action="{{route('user.update',$userInfo->id)}}"  method="post" enctype="multipart/form-data">
             @csrf 
             <div class="form-group">
                 <label class="control-label" for="inputSuccess">User Name</label>
                 <input type="text" value="{{$userInfo->name}}" name="name" class="form-control" id="inputSuccess">
+                {{-- @error('name')
+                    <div class="alert-danger">{{$messages}}</div>
+                @enderror --}}
             </div>
             <div class="form-group">
                 <label class="control-label" for="inputWarning">Email</label>

@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e46d9568-3761-4b72-b875-b3f41294882e" name="Default Changelist" comment="" />
+    <list default="true" id="e46d9568-3761-4b72-b875-b3f41294882e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/superadmin_pkg/src/Http/Controllers/SuperAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/superadmin_pkg/src/Http/Controllers/SuperAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/superadmin_pkg/src/SuperAdminServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/superadmin_pkg/src/SuperAdminServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/superadmin_pkg/src/views/superAdmin/adminTask/CreateUser/createUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/superadmin_pkg/src/views/superAdmin/adminTask/CreateUser/createUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/superadmin_pkg/src/views/superAdmin/adminTask/CreateUser/userEditInfo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/package/superadmin_pkg/src/views/superAdmin/adminTask/CreateUser/userEditInfo.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +132,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mehn6N8vlhSiY3U9Gmd8DWc27Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -129,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Component-tutorial" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -155,6 +166,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609860130036</updated>
       <workItem from="1609860131874" duration="4943000" />
+      <workItem from="1610013242858" duration="616000" />
+      <workItem from="1610077671091" duration="304000" />
     </task>
     <servers />
   </component>
@@ -162,6 +175,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2329" y="58" key="FileChooserDialogImpl" timestamp="1610077975985">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2329" y="58" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1366.728@1920.0.1366.728" timestamp="1610077975985" />
     <state x="1986" y="0" key="SettingsEditor" timestamp="1609862637850">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
