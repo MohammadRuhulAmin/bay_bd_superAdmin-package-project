@@ -1,0 +1,15 @@
+<?php
+
+namespace TeamBravo\SuperAdmin\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Project extends Model
+{
+    use HasFactory;
+    protected $fillable=[
+        'name','starting_date','ending_date','current_date','current_status',
+        'budget','project_documents'
+    ];
+}

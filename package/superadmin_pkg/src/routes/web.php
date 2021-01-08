@@ -37,5 +37,19 @@ Route::group(['namespace'=>'TeamBravo\SuperAdmin\Http\Controllers'],function(){
     Route::post('/super_admin/Expence/update/{id}','ExpenceController@updateExpence')->name('expence.update');
     Route::get('/super_admin/Expence/delete/{id}','ExpenceController@deleteExpence')->name('expence.delete');
 
+    //project Module
+
+    Route::get('/super_admin/project_index','ProjectController@projectIndex')->name('project.index');
+    Route::post('/super_admin/project_index/store','ProjectController@projectStore')->name('project.store');
+    Route::get('/super_admin/project_index/delete/{id}','ProjectController@deleteProject')->name('project.delete');
+    Route::get('/super_admin/project_index/document/{id}','ProjectController@viewDocument')->name('project.document');
+    
+    Route::get('/super_admin/project_index/Edit/{id}','ProjectController@editProject')->name('project.edit');
+    Route::post('/super_admin/project_index/update/{id}','ProjectController@updateProject')->name('project.update');
+
+
+
+
+
 });
 
