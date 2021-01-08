@@ -33,5 +33,9 @@ Route::group(['namespace'=>'TeamBravo\SuperAdmin\Http\Controllers'],function(){
     //Expence Module
     Route::get('/super_admin/Expence','ExpenceController@expenceIndex')->name('expence.index');
     Route::post('/super_admin/Expence/Store','ExpenceController@storeExpence')->name('expence.store');
+    Route::get('/super_admin/Expence/Edit/{id}','ExpenceController@editExpence')->name('expence.edit');
+    Route::post('/super_admin/Expence/update/{id}','ExpenceController@updateExpence')->name('expence.update');
+    Route::get('/super_admin/Expence/delete/{id}','ExpenceController@deleteExpence')->name('expence.delete');
+
 });
 

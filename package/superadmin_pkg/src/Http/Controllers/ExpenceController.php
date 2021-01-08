@@ -22,4 +22,27 @@ class ExpenceController extends Controller
         return redirect()->back();
     }
 
+    public function editExpence($id){
+        $expence  =  Expence::find($id);
+        return view('SuperAdmin::superAdmin.adminTask.Expence.EditExpence',compact('expence'));
+    }
+    
+    public function updateExpence(Request $request,$id){
+        $expence = Expence::find($id);
+        $expence->sector = $request->sector;
+        $expence->amount = $request->amount;
+        $expence->date = $request->date;
+        $expence->month = $request->month;
+        $expence->year = $request->year;
+        $expence->save();
+        return redirect()->route('expence.index');
+
+    }
+
+    public function deleteExpence($id){
+        $expence = Expence::find($id);
+        $expence->delete();
+        return redirect()->route('expence.index');
+    }
+
 }
