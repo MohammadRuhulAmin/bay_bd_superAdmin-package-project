@@ -6,7 +6,7 @@
     <div class="jumbotron">
         <img src="{{url($userDetail->photo)}}" width="200" height="200">
         <br>
-
+        <a href="{{route('userProjectList',$userDetail->id)}}" class="btn btn-primary pull-right">  Projects Assignment List </a>
         <a href="{{route('user.editInfo',$userDetail->id)}}" class="btn btn-warning pull-right">Edit Details</a>
         <a href="{{route('user.delete',$userDetail->id)}}" class="btn btn-danger pull-right">Delet User Permanently</a>
     </div>

@@ -51,7 +51,14 @@ Route::group(['namespace'=>'TeamBravo\SuperAdmin\Http\Controllers'],function(){
 
 
     //Engineers Project
-  
+    
+    Route::get('/super_admin/index','EngineerProjectController@index')->name('projectEng.index');
+    Route::post('/super_admin/projectAssigning/store','EngineerProjectController@storeEngPro')->name('projectEngineering.store');
+    Route::get('/super_admin/projectAssigning/viewMembers','EngineerProjectController@projectMembers')->name('project.membersList');
+
+    Route::get('/super_admin/projectAssigning/project_list/{id}','EngineerProjectController@viewProjectsList')->name('userProjectList');
+
+
 
 
 

@@ -62,7 +62,7 @@
                     <td>{{$pjct->ending_date}}</td>
                     <td>{{$pjct->current_status}}</td>
                     <td>{{$pjct->budget}}</td>
-                    <td><td><a href="{{route('project.document',$pjct->id)}}" class="btn btn-success">Document</a></td></td>
+                    <td><a href="{{route('project.document',$pjct->id)}}" class="btn btn-success">Document</a></td>
                     <td><a href="{{route('project.edit',$pjct->id)}}" class="btn btn-success">Edit</a></td>
                     <td><a href="{{route('project.delete',$pjct->id)}}" class="btn btn-danger">Delete</a></td>
                 </tr>

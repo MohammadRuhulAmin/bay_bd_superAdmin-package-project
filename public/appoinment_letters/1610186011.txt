@@ -1,0 +1,12 @@
+Admin
+   
+   tasks
+      -task_list
+      -start_date
+      -end_date
+      -project_id
+      -user_id      
+   
+   password_reset
+   profile_edit       
+ 
