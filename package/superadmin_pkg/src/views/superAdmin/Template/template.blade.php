@@ -62,6 +62,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                 <li  >
                     <a  href="{{route('project.index')}}"><i class="fa fa-square-o fa-3x"></i> Projects</a>
                 </li>
+                <li  >
+                    <a  href=""><i class="fa fa-table fa-3x"></i> Project & Engineer</a>
+                </li>
             </ul>
 
         </div>
